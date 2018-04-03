@@ -33,8 +33,8 @@ public class Deck {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 		this.cards = new ArrayList<Card>();
 		for (int i = 0; i < ranks.length; i++){
-			for (String suitString:suits){
-				Card cardz = new Card(ranks[i], suits[i], values[i]);
+			for (int j = 0; j < suits.length; j++){
+				Card cardz = new Card(ranks[i], suits[j], values[i]);
 				this.cards.add(cardz);
 			}
 		}
@@ -82,7 +82,7 @@ public class Deck {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 		size--;
 		if (size <= 0){
-			return null;
+			size = 52;
 		}
 		return cards.get(size);
 	}
