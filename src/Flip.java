@@ -6,7 +6,6 @@ public class Flip{
 
 	}
 
-
 	public static String flip(){
 		int r = (int)(Math.random() * 3);
 		if (r < 2){
@@ -32,5 +31,4 @@ public class Flip{
 		return false;
 
 	}
-
 }
